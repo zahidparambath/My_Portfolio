@@ -35,8 +35,25 @@ a:hover{
 img{
     width: 100%;
 }
+.text-brand{
+    color: var(--color-brand);
+}
+.full-height{
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid #fff;
+}
 
 /* navbar styling */
+
+.navbar{
+    background-color: var(--color-base);
+}
 
 .navbar .nav-link {
     font-weight: 700;
@@ -45,6 +62,10 @@ img{
 }
 
 .navbar .nav-link:hover {
+    color: var(--color-brand);
+}
+
+.navbar .nav-link.active{
     color: var(--color-brand);
 }
 
@@ -60,4 +81,29 @@ img{
 
 .navbar-brand img {
     border: 8px solid var(--color-brand);
+}
+
+/* content wrapper */
+
+#content-wrapper{
+    padding-left: var(--sidebar-width);
+}
+
+/* home button */
+
+.btn{
+    padding: 12px 28px;
+    font-weight: 700;
+}
+
+.btn-brand{
+    background-color: var(--color-brand);
+    border-color: var(--color-brand);
+    color: var(--color-base);
+}
+
+.btn-brand:hover, .btn-brand:focus{
+    background-color: var(--color-brand2);
+    color: var(--color-base);
+    border-color: var(--color-brand2);
 }
